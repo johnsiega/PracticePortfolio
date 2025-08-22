@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Character Info - The World of Siega</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap">
+    <link rel="stylesheet" href="char.css">
+    <script type="text/javascript" src="char.js" defer></script>
+</head>
+<body>
+    <!-- Header section -->
+    <div class="header">
+        <h1 class="header-title">The World of Siega</h1>
+        <p class="header-subtitle">Character Information</p>
+    </div>
+
+    <!-- Navigation bar -->
+    <nav class="navbar">
+        <a href="welcome.html" class="nav-item">🏠 Home</a>
+        <a href="Character.html" class="nav-item active">⭐ Character Info</a>
+        <a href="quest.html" class="nav-item">🗺️ Quests</a>
+        <a href="contact.html" class="nav-item">📩 Contact</a>
+        <a href="login.html" class="nav-item">🚪 Logout</a>
+    </nav>
+
+    <!-- Main content -->
+    <div class="container">
+        <!-- Character Profile Section -->
+        <div class="character-profile">
+            <!-- Avatar and basic info -->
+            <div class="avatar-card">
+                <div class="avatar-container">
+                    <!-- You can replace this with your actual photo -->
+                    <img src="https://scontent.fmnl38-1.fna.fbcdn.net/v/t39.30808-6/470199667_122133638066426696_2852281367879242369_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=a5f93a&_nc_eui2=AeHwxsUwTctrQnB09wm4MvdMPf6SnCRsSnE9_pKcJGxKcTohfDz0r6Xj3UU8QWAUNjOUnR9Aun0NQOzQlIa_qMsq&_nc_ohc=qW1mja3Hds4Q7kNvwEV1Zw7&_nc_oc=Adlw3jj04JS40_P47NffkodtAVyuLWjceaJJMw7Ud4-HAQxdemV4cku8S23vzhMrVY8&_nc_zt=23&_nc_ht=scontent.fmnl38-1.fna&_nc_gid=p1SL-4MOyiFv_fc_ky0QKQ&oh=00_AfUwIwA2gtvO1kVenE7IHCaE3P1IE1PhcX2LwUnPdFqfgQ&oe=68ADD45C" alt="Character Avatar" id="character-avatar">
+                </div>
+                <h2 class="character-name" id="character-name">Cedie</h2>
+                <p class="character-title" id="character-title">Web Developer & Digital Adventurer</p>
+                <span class="level-badge" id="character-level">Level 1</span>
+            </div>
+
+            <!-- Stats card -->
+            <div class="stats-card">
+                <h3 class="stats-title">Character Stats</h3>
+                <div class="stat-item">
+                    <span class="stat-label">💻 Coding</span>
+                    <span class="stat-value" id="coding-stat">85/100</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-label">🎨 Design</span>
+                    <span class="stat-value" id="design-stat">78/100</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-label">🧩 Problem Solving</span>
+                    <span class="stat-value" id="problem-stat">92/100</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-label">🤝 Teamwork</span>
+                    <span class="stat-value" id="teamwork-stat">88/100</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-label">📚 Learning</span>
+                    <span class="stat-value" id="learning-stat">95/100</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-label">⚡ Adaptability</span>
+                    <span class="stat-value" id="adaptability-stat">90/100</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Skills and Bio section -->
+        <div class="info-section">
+            <!-- Skills card -->
+            <div class="info-card">
+                <h3 class="section-title">🛠️ Skills & Abilities</h3>
+                <div class="skills-list" id="skills-container">
+                    <!-- Skills will be populated by JavaScript -->
+                </div>
+            </div>
+
+            <!-- Bio card -->
+            <div class="info-card">
+                <h3 class="section-title">📖 Biography</h3>
+                <p class="bio-text" id="character-bio">
+                    A passionate web developer on a quest to create amazing digital experiences. 
+                    Started the journey in the mystical lands of HTML and CSS, then ventured into 
+                    the JavaScript kingdoms. Currently exploring the realms of modern frameworks 
+                    and backend technologies. Known for turning coffee into code and debugging 
+                    with the patience of a sage.
+                </p>
+            </div>
+        </div>
+
+        <!-- Achievements section -->
+        <div class="achievements-section">
+            <h3 class="section-title">🏆 Achievements & Trophies</h3>
+            <div class="achievements-grid" id="achievements-container">
+                <!-- Achievements will be populated by JavaScript -->
+            </div>
+        </div>
+    </div>
+
+   

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quests - The World of Siega</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap">
+    <link rel="stylesheet" href="quest.css">
+    <script type="text/javascript" src="quest.js" defer></script>
+</head>
+<body>
+    <!-- Header section -->
+    <div class="header">
+        <h1 class="header-title">The World of Siega</h1>
+        <p class="header-subtitle">Quest Board - Your Adventures Await!</p>
+    </div>
+
+    <!-- Navigation bar -->
+    <nav class="navbar">
+        <a href="welcome.html" class="nav-item">🏠 Home</a>
+        <a href="Character.html" class="nav-item">⭐ Character Info</a>
+        <a href="quest.html" class="nav-item active">🗺️ Quests</a>
+        <a href="contact.html" class="nav-item">📩 Contact</a>
+        <a href="login.html" class="nav-item">🚪 Logout</a>
+    </nav>
+
+    <!-- Main content -->
+    <div class="container">
+        <!-- Quest overview stats -->
+        <div class="quest-overview">
+            <div class="stat-card">
+                <div class="stat-number completed" id="completed-count">0</div>
+                <div class="stat-label">Completed Quests</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number in-progress" id="progress-count">0</div>
+                <div class="stat-label">In Progress</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number available" id="available-count">0</div>
+                <div class="stat-label">Available</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number total-xp" id="total-xp">0</div>
+                <div class="stat-label">Total XP Earned</div>
+            </div>
+        </div>
+
+        <!-- Quest filters -->
+        <div class="quest-filters">
+            <button class="filter-btn active" data-filter="all">All Quests</button>
+            <button class="filter-btn" data-filter="available">Available</button>
+            <button class="filter-btn" data-filter="in-progress">In Progress</button>
+            <button class="filter-btn" data-filter="completed">Completed</button>
+        </div>
+
+        <!-- Quests grid -->
+        <div class="quests-grid" id="quests-container">
+            <!-- Quests will be populated by JavaScript -->
+        </div>
+    </div>
+
+
+</body>
+</html>

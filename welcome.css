@@ -1,0 +1,203 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --accent-color: skyblue;
+    --base-color: white;
+    --text-color: black;
+    --nav-bg: rgba(51, 51, 51, 0.9);
+}
+
+body {
+    font-family: 'Pixelify Sans', sans-serif;
+    min-height: 100vh;
+    color: var(--text-color);
+    background-image: url(bgko.jpg); /* Your background image */
+    background-size: cover; /* This makes the image cover the entire body */
+    background-position: center; /* This centers the image */
+    background-repeat: no-repeat; /* This prevents the image from repeating */
+    background-attachment: fixed; /* Optional: This keeps the background fixed while the user scrolls */
+}
+
+/* Header section */
+.header {
+    text-align: center;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
+    padding: 20px 0;
+}
+
+.header-title {
+    font-size: clamp(2rem, 5vw, 3.5rem); /* Responsive font size */
+    font-weight: 700;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.header-subtitle {
+    font-style: italic;
+    font-size: clamp(1rem, 2.5vw, 1.2rem);
+    opacity: 0.9;
+}
+
+/* Navigation bar - now responsive and flexible */
+.navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--nav-bg);
+    padding: 15px 20px;
+    border-radius: 15px;
+    margin: 20px auto;
+    width: 90%;
+    max-width: 800px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+    /* Flex wrap for smaller screens */
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.nav-item {
+    color: white;
+    text-decoration: none;
+    padding: 12px 20px;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    font-weight: 500;
+    font-size: clamp(0.9rem, 2vw, 1rem);
+    /* Flex properties for responsive behavior */
+    flex: 1 1 auto;
+    text-align: center;
+    min-width: 120px;
+}
+
+.nav-item:hover {
+    background-color: var(--accent-color);
+    transform: translateY(-2px);
+    color: var(--text-color);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+}
+
+.nav-item.active {
+    background-color: var(--accent-color);
+    color: var(--text-color);
+}
+
+/* Main container */
+.container {
+    display: flex;
+    justify-content: center;
+    padding: 0 20px;
+    margin-bottom: 40px;
+}
+
+/* Main card */
+.card {
+    background-color: rgba(255, 255, 255, 0.95);
+    width: 100%;
+    max-width: 800px;
+    border-radius: 20px;
+    padding: 40px;
+    box-shadow: 0 8px 32px rgba(0,0,0,0.3);
+    text-align: center;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255,255,255,0.2);
+}
+
+.welcome-title {
+    font-size: clamp(1.5rem, 4vw, 2.5rem);
+    margin-bottom: 30px;
+    color: var(--text-color);
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+}
+
+/* Fixed gif container - now properly centered */
+.card-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 30px 0;
+    border-radius: 15px;
+    overflow: hidden;
+    background-color: rgba(0,0,0,0.05);
+    padding: 20px;
+}
+
+.card-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+    /* Ensure the gif is centered and responsive */
+    display: block;
+    margin: 0 auto;
+}
+
+.intro-title {
+    font-size: clamp(1.3rem, 3vw, 2rem);
+    margin: 30px 0 20px 0;
+    color: var(--text-color);
+}
+
+/* Discord button */
+.discord-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, #7289DA, #5865F2);
+    color: white;
+    text-decoration: none;
+    padding: 15px 30px;
+    border-radius: 50px;
+    margin-top: 30px;
+    font-weight: bold;
+    font-size: 1.1rem;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(114, 137, 218, 0.3);
+}
+
+.discord-button:hover {
+    background: linear-gradient(135deg, #5865F2, #7289DA);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(114, 137, 218, 0.4);
+}
+
+.discord-button svg {
+    margin-right: 10px;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .navbar {
+        padding: 10px;
+        gap: 5px;
+    }
+    
+    .nav-item {
+        padding: 10px 15px;
+        min-width: 100px;
+        font-size: 0.9rem;
+    }
+    
+    .card {
+        padding: 30px 20px;
+        margin: 0 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .navbar {
+        flex-direction: column;
+        width: 95%;
+    }
+    
+    .nav-item {
+        width: 100%;
+        min-width: unset;
+    }
+}
